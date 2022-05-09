@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8CFCF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="299dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="Nhập dữ liệu"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="MSSV"
+        android:textAlignment="center"
+        android:textColor="#F47262"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBaseline_toBaselineOf="@+id/mssvTextField"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/mssvTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:padding="2dp"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Họ và tên"
+        android:textAlignment="center"
+        android:textColor="#F47262"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBaseline_toBaselineOf="@+id/nameTextField"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/nameTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:padding="2dp"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/mssvTextField"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="CCCD"
+        android:textAlignment="center"
+        android:textColor="#F47262"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBaseline_toBaselineOf="@+id/cccdTextField"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/cccdTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:padding="2dp"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/nameTextField" />
+
+    <EditText
+        android:id="@+id/phoneTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:padding="2dp"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/cccdTextField" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Phone"
+        android:textAlignment="center"
+        android:textColor="#F47262"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBaseline_toBaselineOf="@+id/phoneTextField"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Email"
+        android:textAlignment="center"
+        android:textColor="#F47262"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBaseline_toBaselineOf="@+id/emailTextField"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/emailTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:padding="2dp"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/phoneTextField" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Birth Date"
+        android:textAlignment="center"
+        android:textColor="#F47262"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnBirthDate"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="319dp"
+        android:layout_height="320dp"
+        android:background="#C5356E"
+        android:translationZ="100dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBirthDate"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnBirthDate"
+        android:layout_width="216dp"
+        android:layout_height="46dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#00988C8C"
+        android:text="Choose Birth date"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/emailTextField" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Quê quán"
+        android:textAlignment="center"
+        android:textColor="#F47262"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBaseline_toBaselineOf="@+id/quequanTextField"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/quequanTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/btnBirthDate" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Nơi ở hiện tại"
+        android:textAlignment="center"
+        android:textColor="#F47262"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBaseline_toBaselineOf="@+id/noiOTextField"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/noiOTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/quequanTextField" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="176dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/noiOTextField">
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="31dp"
+            android:text="Khoa học máy tính" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="151dp"
+            android:layout_height="27dp"
+            android:text="Kỹ thuật máy tính" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Ngành học hiện tại"
+        android:textColor="#F47262"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noiOTextField" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="Ngôn ngữ lập trình"
+        android:textColor="#F47262"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBaseline_toBaselineOf="@+id/checkBox"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginLeft="5dp"
+        android:text="C"
+        app:layout_constraintBaseline_toBaselineOf="@+id/checkBox2"
+        app:layout_constraintStart_toEndOf="@+id/textView11" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginLeft="5dp"
+        android:text="Python"
+        app:layout_constraintBaseline_toBaselineOf="@+id/checkBox3"
+        app:layout_constraintStart_toEndOf="@+id/checkBox" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:text="Java"
+        app:layout_constraintStart_toEndOf="@+id/checkBox2"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Đồng Ý gửi thông tin"
+        android:textColor="#F15454"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/confirmCheckBox"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/confirmCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Đồng Ý"
+        android:textSize="18dp"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#001E0505"
+        android:text="Gửi thông tin"
+        android:textAllCaps="true"
+        android:textColor="#DA3939"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirmCheckBox" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
